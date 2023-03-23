@@ -1,0 +1,33 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+a{
+    color: rgb(219, 217, 233);
+    text-decoration: none;
+    background: rgb(18, 5, 82);
+    padding: 2px;
+    border-radius: 8px;
+}
+li{
+    list-style: none;
+}
+h1,p{
+    text-align: center;
+}
+li:hover{
+    margin: 5px;
+    font-size: 130%;
+}
+a:hover{
+    background:rgb(7, 1, 36) ;
+    color: aliceblue;
+    padding:5px;
+    border-radius: 10px;
+}
+a:active{
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+#asd{
+    top: 500 ;
+    text-align:center;
+}
