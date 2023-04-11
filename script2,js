@@ -1,0 +1,12 @@
+const ondeTa = document.getElementById('elementoOndeVoceEsta');
+const filhoDoFilho1 = ondeTa.firstElementChild;
+
+ondeTa.parentElement.appendChild(document.createElement('div'));
+
+ondeTa.appendChild(document.createElement('div'));
+
+filhoDoFilho1.appendChild(document.createElement('div'));
+
+const criado = filhoDoFilho1.firstElementChild;
+
+const asseco = criado.parentElement.parentElement.nextElementSibling;
