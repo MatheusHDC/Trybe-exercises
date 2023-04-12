@@ -41,6 +41,31 @@ criaLista();
 
 for(let index = 0; index < 3; index += 1){
     const h3 = document.createElement('h3');
-    h3.innertext = index;
+    h3.innerText = index;
     mainContent.appendChild(h3);
 };
+
+const title = document.querySelector('h1');
+title.className = 'title';
+
+// Adicione a classe description nas 3 tags h3 criadas;
+const h3 = document.getElementsByTagName('h3');
+for (let index = 0; index < 3; index += 1) {
+  h3[index].className = 'description';
+};
+
+// Remova a `section` criada no passo 5 (aquela que possui a classe `left-content`) por meio da função `.removeChild()`;
+const sectionLeftContent = document.getElementsByClassName('left-content')[0];
+mainContent.removeChild(sectionLeftContent);
+
+// Centralize a `section` criada no passo 6 (aquela que possui a classe `right-content`). Dica: para centralizar, basta configurar o `margin-right: auto` da `section`.
+const sectionRightContent = document.getElementsByClassName('right-content')[0];
+sectionRightContent.style.marginRight = 'auto';
+
+// Troque a cor de fundo do elemento-pai da `section` criada no passo 3 (aquela que possui a classe `center-content`) para a cor verde;
+const sectionCenterContent = document.getElementsByClassName('center-content')[0];
+sectionCenterContent.parentNode.style.backgroundColor = 'green';
+
+// Remova os dois últimos elementos (nove e dez) da lista criada no passo 8.
+listaNaoOrdenada.lastChild.remove();
+listaNaoOrdenada.lastChild.remove();
