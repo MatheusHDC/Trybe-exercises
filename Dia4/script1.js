@@ -1,19 +1,20 @@
 const body = document.querySelector('body');
-const TextoALer = document.getElementById('texto-a-ler');
+const textoALer = document.getElementById('texto-a-ler');
 const backgroundColors = document.querySelectorAll('#background-color button');
 const fontColor = document.querySelectorAll('#font-color button');
 const fontSize = document.querySelectorAll('#font-size button');
 const lineHeight = document.querySelectorAll('#line-height button');
 const fontFamily = document.querySelectorAll('#font-family button');
 
-const trocaFundo = () =>{
+const trocaBackGroundColor = () =>{
     for(let elementos of backgroundColors){
         elementos.addEventListener('click', ()=>{
             body.style.backgroundColor = elementos.innerText;
         });
     };
 };
-const corDaFonte = () =>{
+
+const trocaFontColor = () =>{
     for(let elementos of fontColor){
         elementos.addEventListener('click', ()=>{
             body.style.color = elementos.innerText;
@@ -22,5 +23,14 @@ const corDaFonte = () =>{
     };
 };
 
-trocaFundo();
-corDaFonte();
+const trocaFontSize = () =>{
+    for(let elementos of fontSize){
+        elementos.addEventListener('click', ()=>{
+            body.style.fontSize = elementos.innerText;
+        });
+    };
+};
+
+trocaBackGroundColor();
+trocaFontColor();
+trocaFontSize();
