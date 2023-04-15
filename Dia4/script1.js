@@ -31,6 +31,15 @@ const trocaFontSize = () =>{
     };
 };
 
+const trocaLineHeigth = () =>{
+    for(let elementos of lineHeight){
+        elementos.addEventListener('click', ()=>{
+            textoALer.style.lineHeight = elementos.innerText;
+        });
+    };
+};
+
 trocaBackGroundColor();
 trocaFontColor();
 trocaFontSize();
+trocaLineHeigth();
