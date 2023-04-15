@@ -39,7 +39,16 @@ const trocaLineHeigth = () =>{
     };
 };
 
+const trocaFontFamily = () =>{
+    for(let elementos of fontFamily){
+        elementos.addEventListener('click', ()=>{
+            textoALer.style.fontFamily = elementos.innerText;
+        });
+    };
+};
+
 trocaBackGroundColor();
 trocaFontColor();
 trocaFontSize();
 trocaLineHeigth();
+trocaFontFamily();
