@@ -1,0 +1,26 @@
+#date{
+    width: min-content;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:fit-content;
+    background-color:aliceblue;
+    padding: 40px;
+    border-radius: 40px;
+    margin-bottom: 30px;
+    border: solid black 1px;
+}
+body{
+    margin-top: 70px;
+    background-image: linear-gradient(to right,rgb(71, 80, 193), rgb(24, 113, 138));
+}
+h1{
+    background-color: aliceblue;
+    width: fit-content !important;
+    display: block;
+    padding: 30px !important;
+    border-radius: 20px;
+    border: solid black 1px;
+}
