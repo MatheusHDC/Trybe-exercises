@@ -1,68 +1,111 @@
 html {
   box-sizing: border-box;
+  margin: 10px;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
-.container {
+* {
+  font-size: x-large;
+}
+
+h1 {
+  font-size: xx-large;
+}
+
+nav ul {
   display: flex;
+  width: min-content;
+  justify-content: space-around;
+  width: 100%;
 }
 
-p {
-  padding: 20px;
+nav ul li {
+  list-style-type: none;
+  background-color: rgb(57, 57, 239);
+  color: aliceblue;
+  padding: 5px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  font-size: x-large;
+  font-weight: 500;
 }
 
-/* TODO */
-
-/* Aqui está o primeiro breakpoint e os estilos definidos para ele */
-
-@media screen and (max-width: 600px) {
-  body {
-    background-color: lightcoral;
-    font-family: sans-serif;
-  }
-  .container {
-    flex-direction: column;
-  }
-
-  p {
-    padding: 0 5px;
-    line-height: 1.5em;
-  }
-
-  /* TODO */
+header p {
+  font-size: xx-large;
+  text-align: center;
+  font-weight: 550;
 }
 
-/* Aqui está o segundo breakpoint e os estilos definidos para ele */
+@media screen and (min-width: 768px) {
+html {
+  margin: 50px 25px;
+}
 
-@media screen and (min-width: 600px) {
-  body {
-    background-color: lightblue;
+  * {
+    font-size: large;
   }
 
   .container {
+    display: flex;
     flex-wrap: wrap;
   }
 
-  /* TODO */
+  header {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  nav ul {
+    padding-top: 20px;
+  }
+
+  aside h2 {
+    margin-left: 50px;
+  }
+
 }
 
-/* Aqui está o terceiro breakpoint e os estilos definidos para ele */
+@media screen and (min-width: 1024px) {
+  * {
+    font-size: large;
+  }
 
-@media screen and (min-width: 1000px) {
-  body {
-    background-color: lightgreen;
+  nav ul {
+    justify-content: center;
+  }
+
+  nav ul li {
+    margin-left: 10px;
+    font-size: large;
   }
 
   .container {
-    flex-wrap: nowrap;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 
-  * {
-    margin: 3px;
+  header {
+    width: 100%;
+    margin-bottom: 50px;
   }
 
-  /* TODO */
+  nav ul {
+    padding-top: 20px;
+  }
+
+  aside h2 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: x-large;
+  }
+  
 }
