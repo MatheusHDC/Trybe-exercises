@@ -4,7 +4,7 @@
   "description": "Particionamento dos exercícios Trybe",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "keywords": [],
   "author": "",
